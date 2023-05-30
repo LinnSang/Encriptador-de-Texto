@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+
+
+header{
+    background: #510e7d;
+}
+
+header img{
+    width: 20%;
+}
+
+.contenedor{
+
+display:flex;
+flex-direction: row;
+
+}
+
+.contenedor-izq img{
+    width: 30px;
+    margin:10px 0px 15px 40px;
+    
+}
+.contenedor-izq{
+    flex:70%;
+    background: #7b459f;
+
+}
+
+.contenedor1{
+position: relative;
+width:60%;
+margin:0 0 0 25%;
+}    
+
+#textarea1{
+width:100%;
+margin-top: 20px;
+background:  #f6f6f8;
+border:none;
+border-radius: 15px;
+box-shadow: 5px 5px 5px  #a8a3c2;
+resize: none;
+padding-left: 10px;
+padding-top: 5px;
+color:rgb(0, 0, 0);
+font-size: 32px;
+
+}
+
+.contenedor-izq p{
+    margin:10px 0 0 25%;
+    font-weight: 600;
+    
+}
+
+.botones{
+    width:60%;
+    margin:20px 0 50px 25%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between; 
+    
+}
+
+.botones button{
+    flex:0 0 45%;
+    padding: 15px;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+
+#encriptar{
+    background:rgb(0, 0, 18);
+    color: white;
+    font-weight: 700;
+    
+}
+
+#encriptar:hover{
+    background:rgb(231, 91, 189);
+    color: white;
+    transform: scale(0.9);
+}
+
+#desencriptar{
+    
+    background: white;
+    color: rgb(26, 26, 59);
+    font-weight: 700px;
+
+}
+
+#desencriptar:hover{  
+    background:rgb(231, 91, 189);
+    color: white;
+    transform: scale(0.9);
+}
+
+.contenedor-der{
+    flex:30%;
+    background:  #7b459f;
+    padding:0 2% 0 2%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor2{
+    flex:100%;
+    background: white;
+    height:90%;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 6px 6px 3px rgb(82, 80, 80);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}    
+.contenedor2 img{
+    width: 100%;
+    margin:0 10%; 
+    
+}
+
+#titulo{
+    font-size: 24px;
+    font-weight: 700;
+    color:#343A40;
+    margin:20px 10% 0 10%;
+    text-align: center;
+    
+}
+#subtitulo{
+    font-size: 16px;
+    font-weight: 400;
+    color:#343A40;
+    margin:20px 10%;
+    text-align: center;
+    
+}
+
+#textarea2{
+    width: 90%;
+    margin: 10% 5% 0 5%;
+    resize: none;
+    font-size: 24px;
+    height: 80%;
+    border:none;
+    display:none;
+    
+}
+#copiar{
+    background: #D8DFE8;
+    color: rgb(26, 26, 59);
+    width: 80%;
+    font-weight: 700;
+    margin:0 10% 10% 10%;
+    height: 45px;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display:none;
+}
+#copiar:hover{
+    background: rgb(231, 91, 189);
+    color: white;
+    transform: scale(1.1);
+}
+footer{
+    width: 100%;
+    background:  white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer p{
+    padding: 20px 0 10px 0;
+    color:rgb(7, 7, 7);
+    
+}
+
+footer .fa{
+    border-radius: 50%;
+    padding:10px;
+    font-weight: 400;
+    text-decoration: none;
+    font-size:28px;
+}
+
+.fa-linkedin{
+    background: #015b85;
+    color: white;
+}
+
+.fa-github{
+    background: rgb(3, 3, 3);
+    color: white;
+}
+
+@media screen and (min-width: 376px) and (max-width:768px){
+.contenedor{
+
+    flex-direction: column;
+}
+.contenedor-izq{
+    flex:100%;
+    background: #e5e5e5;
+    
+}
+
+.contenedor-der{
+        flex:100%;
+        background: #e5e5e5;    
+}
+
+.contenedor1{
+   width:90%;
+   margin:10% 5% 0 5%;
+}      
+
+.contenedor-izq p{
+    margin:10px 5% 0 5%;
+    
+}
+
+.botones{
+    width:90%;
+    margin:20px 5% 0 5%;
+
+    
+}
+
+.contenedor2{
+    margin:30px 5% 30px 5%;
+    justify-content: space-between;
+    flex:100%;
+}    
+
+
+#textarea2{
+display:none;
+}
+}
+
+@media screen and (max-width:375px){
+
+.contenedor{
+
+    flex-direction: column;
+}
+.contenedor-izq{
+
+    background: #e5e5e5;
+    
+}
+.contenedor2{
+    width:90%;
+}
+.contenedor-der{
+        flex:100%;
+        background: #e5e5e5;    
+}
+
+.contenedor1{
+    width:90%;
+    margin:10% 5% 0 5%;
+}      
+
+.contenedor-izq p{
+    margin:30px 0 0 20%;
+    
+}
+
+.botones{
+    width: 100%;
+    margin:30px 20% 20px 10%;
+    display:flex;
+    flex-direction:column; 
+    justify-content: flex-start;
+}
+.botones input{
+    flex:100%;
+    padding:30px;
+    
+}
+
+#encriptar{
+
+    margin:0 0 5px 0;
+}
+    
+#desencriptar{
+    margin:5px 0 0 0;
+}
+
+.contenedor2{
+    margin:30px 5% 30px 5%;
+    justify-content: space-between;
+    flex:100%;
+}    
+
+
+#textarea2{
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+    resize: none;
+    font-size: 24px;
+    height: 50%;
+    border:1px solid black;
+    display:none;
+    
+}
+
+}
